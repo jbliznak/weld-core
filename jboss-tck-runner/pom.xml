@@ -527,9 +527,8 @@
                                 <!-- Specifiy any garbage collection related args here -->
                                 <gc.args />
                                 <!-- This property propagates to the javaVmArguments in arquillian.xml -->
-                                <additional.vm.args>
-                                    ${server.jvm.jpms.args}
-                                </additional.vm.args>
+                                <additional.vm.args>${additional.vm.args}</additional.vm.args>
+                                <server.jvm.jpms.args>${server.jvm.jpms.args}</server.jvm.jpms.args>
                             </systemProperties>
                             <suiteXmlFiles>
                                 <suiteXmlFile>target/suites/tck-web-suite.xml</suiteXmlFile>

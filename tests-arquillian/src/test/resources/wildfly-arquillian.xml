@@ -17,7 +17,7 @@
             <!-- ARQ-649 workaround -->
             <property name="outputToConsole">false</property>
             <property name="allowConnectingToRunningServer">true</property>
-            <property name="javaVmArguments">-Xms128m -Xmx768m ${additional.vm.args} ${jacoco.agent}</property>
+            <property name="javaVmArguments">${server.jvm.jpms.args} -Xms128m -Xmx768m ${additional.vm.args} ${jacoco.agent}</property>
             <property name="jbossArguments">${additional.jboss.args}</property>
             <property name="managementAddress">${node.address}</property>
         </configuration>

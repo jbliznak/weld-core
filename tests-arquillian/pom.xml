@@ -335,7 +335,8 @@
                                 <arquillian.xml>wildfly-arquillian.xml</arquillian.xml>
                                 <jacoco.agent>${jacoco.agent}</jacoco.agent>
                                 <node.address>${node.address}</node.address>
-                                <additional.vm.args>${server.jvm.jpms.args}</additional.vm.args>
+                                <additional.vm.args>${additional.vm.args}</additional.vm.args>
+                                <server.jvm.jpms.args>${server.jvm.jpms.args}</server.jvm.jpms.args>
                                 <additional.jboss.args>${additional.jboss.args}</additional.jboss.args>
                                 <org.jboss.remoting-jmx.timeout>360</org.jboss.remoting-jmx.timeout>
                             </systemProperties>
